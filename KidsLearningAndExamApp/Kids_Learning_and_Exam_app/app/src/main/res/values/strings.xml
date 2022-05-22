@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Kids Learning App</string>
+    <string name="correct"><b>CORRECTNESS IS</b> \n
+                           OUT OF 6</string>
+    <string name="true_text">true</string>
+    <string name="false_text">false</string>
+    <string name="correct_answer">Correct</string>
+    <string name="wrong_answer">InCorrect</string>
+    <string name="a">Apple</string>
+    <string name="b">Banana</string>
+    <string name="c">Banana</string>
+    <string name="d">Grapes</string>
+    <string name="e">Orange</string>
+    <string name="f">Strawberry</string>
+    <string name="next_text">next</string>
+    <string name="prev_text">previous</string>
+</resources>

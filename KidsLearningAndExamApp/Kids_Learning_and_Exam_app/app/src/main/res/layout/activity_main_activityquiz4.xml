@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Using linear layout with vertical orientation and center gravity -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <!--ImageView used for showing pictures along with questions-->
+    <ImageView
+        android:id="@+id/myimage"
+        android:layout_width="wrap_content"
+        android:layout_height="389dp"
+        android:src="@drawable/apple" />
+
+    <!--TextView used for showing questions on screen-->
+    <TextView
+        android:id="@+id/answer_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="112dp"
+        android:padding="10dp"
+        android:text="@string/a"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+
+    <!--Using another LinearLayout for showing buttons
+        in horizontal orientation-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!--TrueButton-->
+
+        <!--FalseButton-->
+        <Button
+            android:id="@+id/true_button"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#5BD91B"
+            android:text="@string/true_text"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/false_button"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="#E33328"
+            android:text="@string/false_text"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!--PreviousButton-->
+
+        <!--NextButton-->
+
+        <ImageButton
+            android:id="@+id/prev_button"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#DFD2D1"
+            android:src="@drawable/previous"
+            android:text="@string/prev_text" />
+
+        <ImageButton
+            android:id="@+id/next_button"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#DFD2D1"
+            android:src="@drawable/next"
+            android:text="@string/next_text" />
+
+    </LinearLayout>
+</LinearLayout>
